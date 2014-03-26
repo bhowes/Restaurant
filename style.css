@@ -23,21 +23,20 @@ h1{
 
 }
 
-li {
+li{
 	list-style: none;
 }
+
 
 #wrap {
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
-		margin: 0 auto -5em;
+		margin: 0 auto;
 		padding-top:2em;
-		padding-right: 2em;
-		padding-left: 2em;
 		position: fixed;
 		z-index: 11;
-		background: url(images/bg-wood.jpg) fixed 50% 50% repeat;
+		background: url(images/bg-wood_2.jpg) fixed 50% 50% repeat;
 		background-size: 100%;
 		width: 100%;
 		max-height: 102px
@@ -49,7 +48,7 @@ li {
 
 #main {
 			width : auto;
-			max-width: 60em;
+			max-width: 100%;
 			margin: 0 auto;
 		}
 
@@ -61,8 +60,8 @@ li {
 	clear:both;
 	display: block;
 	height: 170px;
-	margin: 0;
-	width: 100%;
+	margin: 0 auto;
+	width: 960px;
 }
 
 
@@ -70,7 +69,7 @@ li {
 
 .button:hover{
 	cursor:pointer;
-	color: #93d600;
+	color: #aba855;
 	-webkit-transition-property: color;
 	-moz-transition-property: color;
 	-o-transition-property: color;
@@ -86,9 +85,14 @@ li {
 
 }
 
+li.activebutton a{
+		color: #ffe5c2;
+	}
+
 .activebutton{
 	cursor:pointer;
-	border-bottom: #93d600 3px solid;
+	padding-bottom: 5px;
+	border-bottom: #aba855 3px solid;
 	color: #ffe5c2;
 }
 
@@ -108,7 +112,7 @@ li {
 	list-style: none;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin:0;
 	padding:0;
 	text-align:center;
@@ -119,9 +123,10 @@ li {
 
 
 .navbuttons li{
-	padding:0 0 0 10px;
-	font-family: 'Dosis', sans-serif;
-	font-weight: 400;
+	padding:0 0 8px 10px;
+	font-family: ShowcaseSans, sans-serif;
+	font-weight: normal;
+	font-style: normal;
 	display:inline;
 }
 
@@ -131,157 +136,45 @@ padding: 10px;
 margin-top: 20px;
 }
 
-/*PORTFOLIO*/
-/*Problem: I want the portfolio rectangles to be centered at all times. The only way I can figure to do this is to use "text-align:Center". The problem is that this aligns ALL text to the center of the page, even the hover state text which I don't want"; */
-.squarerows{
+/*SLIDESHOW*/
 
-	 width: 100%;
-	 overflow: hidden;
-	 padding: 2em 0 4em 0;
-	 position: relative;
-	 display: block;
-	 text-align: center;
-
-}
-
-
-
-.squares{
-	width: 300px;
-	height: 225px;
-	display: inline-block;
-	margin: .5em;
-	background:url(images/box.png);
+#slideshow {
+	height: 500px;
+	padding: 20px 0;
 	position: relative;
-	text-align: center;
+	margin: 10px 0 0;
+	background-color: #ffe5c2; 
 }
 
-/*This makes the portfolio square divs into links*/
-div.squares a {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    text-decoration: none; /* No underlines on the link */
-    z-index: 10; /* Places the link above everything else in the div */
-    background-color: #FFF; /* Fix to make div clickable in IE */
-    opacity: 0; /* Fix to make div clickable in IE */
-    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
-
-
-
-}
-
-/*This makes the logo divs into a link*/
-div.logo a {
-    position: absolute;
-    width: 300px;
-    height: 90px;
-    text-align: center;
-    text-decoration: none; /* No underlines on the link */
-    z-index: 80; /* Places the link above everything else in the div */
-    background-color: #FFF; /* Fix to make div clickable in IE */
-    opacity: 0; /* Fix to make div clickable in IE */
-    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
-
-
-
-}
-
-.pushdown{
-	text-align: center
-}
-
-.nextbutton{
-	text-decoration: none;
-	margin-bottom: 45px;
-	margin-left: 45px;
-	list-style-type: none;
-	font-family: 'Karla', sans-serif;
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 1.1em;
-	letter-spacing: 1px;
-
-
-
-}
-
-.previousbutton{
-	text-decoration: none;
-	margin-bottom: 45px;
-	margin-right:45px;
-	list-style-type: none;
-	font-family: 'Karla', sans-serif;
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 1.1em;
-	letter-spacing: 1px;
-
-
-}
-
-.gray{
-		color: #838383;
-}
-
-.ssnext{
-	padding-right: 20px;
-	background: url(images/ssIcons.png) no-repeat right -22px;
-	height:20px;
-}
-
-.ssprev{
-	background:url(images/ssIcons.png) no-repeat 0 0;
-	padding-left: 20px;
-	height:20px;
-}
-
-
-.panorama{
-	background:url(images/work/panorama_thumb.png);
-
-}
-
-.guidebook {
-	background: url(images/work/guidebook_thumb.png)
-}
-
-.v3 {
-	background: url(images/work/V3_thumb.png)
-}
-
-.digz {
-	background: url(images/work/BTP_thumb.png);
-}
-
-.logos {
-	background: url(images/work/Logo_thumb.jpg);
-}
-
-.posters {
-	background: url(images/work/Poster_thumb.jpg)
-}
-
-.squares:hover{
-	opacity:.65;
-	cursor:pointer;
-	transition: opacity .5s ease-out;
-
-}
-
-.squares:hover:after{
-    background: #fff;
-    color: #000;
-    content: attr(title);
-    font-size: .85em;
-    font-family: 'Karla', sans-serif;
-    position: absolute;
-    margin: 50px 0 0 -150px;
-	padding: 2em 0em 2em 0em;
+#slideshow:before {
+	content:"";
+	height:10px;
 	width:100%;
+	background: url(images/wave.png) 0 0 repeat-x;
+	display: block;
+	position: absolute;
+	top: -10px;
 }
+
+#slideshow:after {
+	content:"";
+	height:10px;
+	width:100%;
+	background: url(images/wave_down.png) 0 0 repeat-x;
+	display: block;
+	position: absolute;
+	bottom: -10px;
+}
+
+.content {
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	padding: 0;
+	}
+
+
 
 
 
@@ -482,16 +375,24 @@ html, body {
 
 
 /*MEDIA QUERIES*/
- @media only screen and (max-width: 800px) {
+ @media only screen and (max-width: 900px) {
 
- 		.navbuttons li{
+#navigation{
+	width: 100%;
+}
+
+ 	.navbuttons li{
 		float: none;
-		background-color: #d3d3d3;
-		border: solid;
-		border-color: white;
-		border-radius:1em;
+		background-color: #ffe5c2;
+		border-bottom: #aba855 1px solid;
 		display:block;
 		padding:0;
+		color:#aba855;
+	}
+
+.navbuttons li a{
+		display: inline-block;
+		margin-top: 0px;
 	}
 
  	p{
@@ -512,17 +413,20 @@ html, body {
 
 	.logo {
 
-		background: url(images/logo_xsmall.png);
+		
 		background-repeat: no-repeat;
-		width: 230px;
-		margin: 1em 0 1em 0;
+		width: 232px;
+		height:71px;
+		margin: 0 auto;
+		background: url(images/logo_Parisi_small.png);
 		
 	}
 
 	.navbuttons {
-		margin: 0 20% 2em 20%;
+
 		text-align:center;
 		width: 100%;
+		margin-top: 10px;
 		
 
 	}
@@ -536,20 +440,22 @@ html, body {
 
 	.button:hover{
 		cursor:pointer;
-		color: #012059;
+		background-color: #aba855;
+		color: #ffe5c2;
 		display:block;
 	}
 
-	.activebutton{
+	li.activebutton{
 		cursor:pointer;
-		color: #ffffff;
+		color: #ffe5c2;
 		display:block;
-		padding: 10px 0 10px 0;
+		background-color: #aba855;
 
 	}
+
 
 	.button{
-		color: #012059;
+		color: #aba855;
 		display: block;
 		padding: 10px 0 10px 0;
 	}
@@ -574,6 +480,10 @@ html, body {
 	.btn_current {
 		margin: 0 0 6px;
 		border: 1px solid #003d79;
+	}
+
+	#slideshow {
+		display: none;
 	}
 
 	p.footer.copyright{
