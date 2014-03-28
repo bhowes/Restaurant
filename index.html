@@ -8,19 +8,19 @@
 		<meta name="viewport" content="width=device-width" >
 		<title>Parisi Denver</title>
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" type="text/css" href="Showcase Sans & Slab.css">>
-
-
+		<link rel="stylesheet" type="text/css" href="Showcase Sans & Slab.css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="JS/animatescroll.js"></script>
 
 
 	</head>
 
 <body>
 	<div id="wrap">
-			<div id="main">
+		<div id="main">
+			<!-- Beginning Navigation !-->
 				<header>
-
-					<div id="navigation">
+						<div id="navigation">
 							<div class="centeredlogo">
 								<div class="logo">
 									<a href=index.html></a>
@@ -29,62 +29,219 @@
 
 							<div>
 								<ul class="navbuttons">
-									<li class="activebutton">
-										<a  href="#">Home</a>
+									<li>
+										<a class="button" onclick="$('#page0').animatescroll();"href="#home">Home</a>
 									</li>
 									<li>
-										<a class="button" href= "#menu">Menu</a>
+										<a class="button" onclick="$('#page1').animatescroll();">Menu</a>
 									</li>
 									<li>
-										<a class="button" href="#reservations">Reservations</a>
+										<a class="button" onclick="$('#page2').animatescroll();">Reservations</a>
 									</li>
 									<li>
-										<a class="button" href="#events">Events</a>
+										<a class="button" onclick="$('#page3').animatescroll();">Events</a>
 									</li>
 									<li>
-										<a class="button" href="#about">About</a>
+										<a class="button" onclick="$('#page4').animatescroll();">About</a>
 									</li>
 									<li>
-										<a class="button" href="#mailinglist">Join our Mailing List</a>
+										<a class="button" onclick="$('#page5').animatescroll();">Join our Mailing List</a>
 									</li>
 								</ul>
 							</div>
 					</div>
 				</header>
+				<!-- End Navigation !-->
 
-				<section id="slideshow">
-					<div class ="content">
-						<ul id="slideshow-shell">
+			<div id="indexpage">
+			<section id="page0">
+					<a id="home"></a>
+					<div id="slideshow">
+						<div class ="content">
+							<ul id="slideshow-shell">
 
-						</ul>
+							</ul>
+						</div>
 					</div>
-				</section>
-
-				<div id="page1">
+			</section>
+				
+			<section id="page1">
+				<div>
 				  <a id="menu"></a>
-				    About page content goes here.
-				</div>
+				    <div id="menucontent">
+						    <div id="menubox">	
+						    	<h1 class="menuheader"> Dine-In Menu</h1>
+							    		<!-- Beginning of first 2 columns in menu!-->
+								    	<div class="col">
+								    		<h1>ANTIPASTI</h1>
+													<h2>CARCIOFO ALLA GRIGLIA 10 </h2>
+													<p>wood-fire grilled artichoke, spicy aioli &amp; Tuscan fett’unta toasts</p>
 
+													<h2>ARANCINI MISTI 9 </h2>
+													<p>assortment of “fritti” risotto balls </p>
+
+													<h2>ANTIPASTO DELLA CASA (x2) 16 </h2>
+													<p>bruschette with imported Italian salumi &amp; formaggi for 2 </p>
+
+													<h2>COCCOLI 12 </h2>
+													<p>strips of pizza dough lightly fried.  Served with prosciutto crudo &amp; Stracchino cheese</p>
+
+													<h2>FRITTO MISTO 11</h2>
+													<p>lightly fried calamari, shrimp, artichokes, asparagus &amp; baby carrots with spicy roasted red bell pepper aioli </p>
+
+													<h2>MOZZARELLA TASTING BOARD 12 </h2>
+													<p>burrata, mozzarella di bufala and fiordilatte served with grilled zucchini & veggie marmellata </p>
+
+											<h1> PRIMI </h1>
+											
+													<h2>SPAGHETTI CARBONARA 9 </h2>
+													<p>egg &amp; cream sauce with crispy pancetta</p>
+
+													<h2>PENNE SALMONE &amp; ASPARAGI 9 </h2>
+													<p>smoked salmon, asparagus &amp; cream </p>
+
+													<h2>SPAGHETTI POMODORO 9 </h2>
+													<p>plum tomato sugo</p>
+
+													<h2>LASAGNA 9 </h2>
+													<p>layers of meat Bolognese sauce, mozzarella, parmigiano & besciamella</p>
+
+													<h2>GNOCCHI SORRENTINA  11 </h2>
+													<p>plum tomato sugo, cherry tomatoes, basil &amp; fresh mozzarella</p>
+
+													<h2>GNOCCHI PESTO 11 </h2>
+													<p>basil pesto (with nuts) &amp; cream</p>
+
+													<h2>GNOCCHI GORGONZOLA &amp; NOCI 11 </h2>
+													<p>gorgonzola cream sauce &amp; walnuts</p>
+
+													<h2>GNOCCHI SALCICCIA 11 </h2>
+													<p>spicy sausage, cherry tomatoes &amp; plum tomato sugo</p>
+
+													<h2>TAGLIATELLE RAGU’ 12 </h2>
+													<p>Bolognese tomato &amp; meat sauce</p>
+
+													<h2>TAGLIATELLE BOSCAIOLA 12 </h2>
+													<p>pancetta, porcini  mushrooms, plum tomato sugo &amp; cream</p>
+
+													<h2>TAGLIATELLE AI FUNGHI 12 </h2>
+													<p>wild mushroom, vegetable battuto, tomato, EVOO</p>
+
+													<h2>TAGLIATELLE GAMBERETTI 12 </h2>
+													<p>shrimp, saffron, zucchini &amp; cream</p>
+
+													<h2>RISOTTO DEL GIORNO 13 </h2>
+													<p>risotto of the day</p>
+
+													<h2>RAVIOLI DEL GIORNO 14 </h2>
+													<p>ravioli of the day</p>
+										</div>
+
+
+										<div class="col borderleft pushdown">
+											<h1>INSALATE</h1>
+													<h2>BIB LETTUCE 8</h2>
+													<p>avocado, mignonette, cheese fondue &amp; crispy pancetta</p>
+
+													<h2>PARISI CAESAR 8/4</h2>
+													<p>romaine hearts, parmigiano, garlic Caesar dressing served with house-made grissini </p>
+
+													<h2>TRE’ COLORI  7/3.5</h2>
+													<p>radicchio, arugula &amp; shaved fennel with parmigiano and blood orange dressing </p>
+
+													<h2>INSALATA PERA 7/3.5</h2>
+													<p>Romaine hearts, gorgonzola, pears, walnuts, EVOO, balsamic reduction </p>
+
+													<h2>INSALATA CAPRESE 8</h2>
+													<p>tomato, basil, fresh mozzarella, cracked pepper, EVOO </p>
+
+													<h2>INSALATA SALMONE 12</h2>
+													<p>Wood-fire-grilled salmon, arugula, shaved fennel, artichoke, cherry tomato with lemon dressing </p>
+
+											<h1>SECONDI</h1>
+														<h2>MACELLERIA TAGLIATA DI MANZO 15 </h2>
+														<p>thinly-sliced Colorado beef topped with arugula, shaved parmesan &amp; garlic-lemon-rosemary olive oil served with roasted potatoes</p>
+
+														<h2>POLLO AL MATTONE 13</h2>
+														<p>chicken grilled under a brick with garlic-lemon-rosemary olive oil served with grilled asparagus &amp; truffle mashed potatoes</p>
+
+														<h2>TUSCAN RIBS 15</h2>
+														<p>slow-roasted &amp; wood-fire-grilled pork ribs served with white beans &amp; roasted potatoes</p>
+
+														<h2>POLPETTONE 13</h2>
+														<p>Nonna’s meatloaf    served with truffle mashed potatoes &amp; sautéed spinach</p>
+
+														<h2>PORCHETTA 15</h2>
+														<p>slow-roasted herbed pork served with verdi e bianchi</p>
+
+														<h2>AGNELLO PEPE VERDE 18</h2>
+														<p>rack of lamb &amp; green peppercorn sauce served with grilled asparagus &amp; roasted potatoes</p>
+
+														<h2>POLLO ALLA PARMIGIANA 14</h2>
+														<p>breaded chicken breast topped with plum tomato sugo &amp; fresh mozzarella served with roasted potatoes &amp; spinach</p>
+
+
+											<h1>PESCHERIA</h1>
+														<h2>SALMONE 14</h2>
+														<p>wood-fire-grilled salmon with grilled asparagus &amp; arugula</p>
+
+														<h2>TROTA 14</h2>
+														<p>pan-seared Colorado trout served with oven-roasted tomato &amp; braised fennel</p>
+
+														<h2>GAMBERONI 16</h2>
+														<p>Jumbo shrimp served with crispy polenta, plum tomato Sambuca sugo &amp; spinach</p>
+
+														<h2>COZZE 12</h2>
+														<p>PEI mussels in a spicy plum tomato sugo served with grilled ciabatta</p>
+
+														<h2>CIOPPINO 18</h2>
+														<p>Livorno-style seafood soup in a tomato broth</p>
+										</div>
+										<!-- End of first 2 columns in menu!-->
+										
+
+										
+
+						    </div>
+				    </div>
+				</div>
+			</section>
+
+
+			<section>
 				<div id="page2">
 				  <a id="reservations"></a>
 				    Portfolio page content goes here.
 				</div>
+			</section>
 
+			<section>
 				<div id="page3">
+				  <a id="events"></a>
+				    Event page content goes here.
+				</div>
+			</section>
+
+			<section>				
+				<div id="page4">
 				  <a id="about"></a>
 				    Contact page content goes here.
 				</div>
+			</section>
 
-				<div id="page4">
+			<section>	
+				<div id="page5">
 				  <a id="mailinglist"></a>
 				    Mailing List content goes here.
 				</div>
-
-
+			</section>
 
 
 			</div>
+
 		</div>
+	</div>
+
 
 </body>
 
