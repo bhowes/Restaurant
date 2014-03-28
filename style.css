@@ -11,6 +11,7 @@ html {
 	background: url(images/bg-wood_2.jpg) fixed 50% 50% repeat;
 	background-size: 100%;
 	position: relative;
+
 	}
 
 a {
@@ -36,10 +37,17 @@ h1 {
 h2{
 	font-family: ShowcaseSans, sans-serif;
 	font-size: 1.2em;
-	text-align: left;
 	color: #aba855;
 	margin-bottom: 0;
 
+}
+
+h3{
+	font-family: ShowcaseSlab, sans-serif;
+	font-size: 1.2em;
+	color: #49311c;
+	-webkit-font-smoothing: antialiased !important;
+	margin-bottom: 0px;
 }
 
 
@@ -155,7 +163,6 @@ div.logo a {
 
 
 .navbuttons li{
-	padding:0 0 8px 10px;
 	font-family: ShowcaseSans, sans-serif;
 	font-weight: normal;
 	font-style: normal;
@@ -163,9 +170,17 @@ div.logo a {
 }
 
 .navbuttons li a{
-display: inline-block;
-padding: 10px;
-margin-top: 10px;
+	display: inline-block;
+	padding:10px 0 8px 0;
+	margin-left: 20px;
+	font-family: ShowcaseSans, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 10px;
+}
+
+.navbuttons li:first-child a {
+	margin-left: 0px;
 }
 
 .navbuttons li a:active{
@@ -228,8 +243,8 @@ margin-top: 10px;
 }
 
 #page2{
-	height:1000px;
-	background:pink;
+	height:857px;
+	background:url(images/florence.jpg);
 }
 
 #page3{
@@ -267,24 +282,66 @@ margin-top: 10px;
 }
 
 .menuheader{
-	font-size: 2em;
-	margin-bottom: 35px;
+	font-size: 2.5em;
+	margin-bottom: 15px;
 	color: #49311c;
 	margin-top: 25px;
+	font-family: ShowcaseSlab; sans;
+	letter-spacing: -1px;
+	-webkit-font-smoothing: antialiased !important;
+	text-shadow: 2px 2px 0 #ffe5c2,4px 4px 0 #aba855;
 }
 
+.ornament {
+	font-family: ShowcaseOrnaments;
+}
+
+/*.menu_pdf{
+	background-color: #49311c;
+	color:white;
+	height:20px;
+	width:30px;
+
+} */
 
 
-.col {
+
+.halfcol {
 	padding: 0 1.5% 20px 1.5%;
 	width: 46%;
 	float: left;
 	position: relative;
-	height:;
+}
+
+.quartcol{
+	width:30%;
+	float: left;
+	position: relative;
+	padding: 0 2% 20px 2%;
+}
+
+.3quartcol{
+	width:60%;
+	padding: 0 3% 20px 3%;
+}
+
+.fullcol{
+	width:94%;
+	padding: 0 3% 0 3%;
 }
 
 .borderleft{
 	border-left: 1px solid #aba855;
+}
+
+.borderbottom {
+	border-bottom: 1px dotted #c8bbb4;
+	
+	padding-bottom: 20px;
+}
+
+.center{
+	text-align: center;
 }
 
 .pushdown {
@@ -511,7 +568,8 @@ html, body {
 
 .navbuttons li a{
 		display: inline-block;
-		margin-top: 0px;
+		margin:0 auto;
+
 	}
 
  	p{

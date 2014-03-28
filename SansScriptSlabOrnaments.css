@@ -1,0 +1,49 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 2784302, 2014-03-28T12:56:10-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Showcase Ornaments by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/showcase/ornaments/
+ * Copyright: Copyright 2014 Adobe Systems Incorporated. All rights reserved.
+ * 
+ * Webfont: Showcase Sans by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/showcase/sans/
+ * Copyright: Copyright (c) 2014 by Paula Nazal &amp; Daniel Hernandez. All rights reserved.
+ * 
+ * Webfont: Showcase Script by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/showcase/script/
+ * Copyright: Copyright (c) 2014 by Paula Nazal &amp; Daniel Hernandez. All rights reserved.
+ * 
+ * Webfont: Showcase Slab by Latinotype
+ * URL: http://www.myfonts.com/fonts/latinotype/showcase/slab/
+ * Copyright: Copyright (c) 2014 by Paula Nazal &amp; Daniel Hernandez. All rights reserved.
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2784302
+ * Licensed pageviews: 10,000
+ * 
+ * © 2014 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2a7c2e");
+
+  
+@font-face {font-family: 'ShowcaseOrnaments';src: url('webfonts/2A7C2E_0_0.eot');src: url('webfonts/2A7C2E_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2A7C2E_0_0.woff') format('woff'),url('webfonts/2A7C2E_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ShowcaseSans';src: url('webfonts/2A7C2E_1_0.eot');src: url('webfonts/2A7C2E_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2A7C2E_1_0.woff') format('woff'),url('webfonts/2A7C2E_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ShowcaseScript';src: url('webfonts/2A7C2E_2_0.eot');src: url('webfonts/2A7C2E_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2A7C2E_2_0.woff') format('woff'),url('webfonts/2A7C2E_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'ShowcaseSlab';src: url('webfonts/2A7C2E_3_0.eot');src: url('webfonts/2A7C2E_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2A7C2E_3_0.woff') format('woff'),url('webfonts/2A7C2E_3_0.ttf') format('truetype');}
+ 
