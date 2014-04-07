@@ -11,6 +11,19 @@
 		<link rel="stylesheet" type="text/css" href="SansScriptSlabOrnaments.css">
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="JS/animatescroll.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+			    <script>
+			      function initialize() {
+			        var map_canvas = document.getElementById('map_canvas');
+			        var map_options = {
+			          center: new google.maps.LatLng(39.776711, -105.044041),
+			          zoom: 15,
+			          mapTypeId: google.maps.MapTypeId.ROADMAP
+			        }
+			        var map = new google.maps.Map(map_canvas, map_options)
+			      }
+			      google.maps.event.addDomListener(window, 'load', initialize);
+			    </script>
  
 
 
@@ -30,7 +43,7 @@
 
 							<div>
 								<ul class="navbuttons">
-									<li>
+									<li class="top">
 										<a class="button" onclick="$('#page0').animatescroll();"href="#home">Home</a>
 									</li>
 									<li>
@@ -42,7 +55,7 @@
 									<li>
 										<a class="button" onclick="$('#page3').animatescroll();">About</a>
 									</li>
-									<li>
+									<li class="bottom">
 										<a class="button" onclick="$('#page4').animatescroll();">Contact</a>
 									</li>
 								</ul>
@@ -54,13 +67,11 @@
 			<div id="indexpage">
 			<section id="page0">
 					<a id="home"></a>
-					<div id="slideshow">
+					<div id="slideshow1">
 						<div class ="content">
-								<div class= "slider-wrapper theme-default">
-									<div class="slider" class="nivoSlider">
-									   	<img class="slideimage" src="images/pizzaentree.png" alt="" />
-									</div>
-								</div>
+								
+									   	<img class="slideimage" src="images/salmonentree.png" alt="" />
+								
 						</div>
 					</div>
 			</section>
@@ -275,8 +286,27 @@
 
 			<section>	
 				<div id="page4">
-				  <a id="mailinglist"></a>
-				    Mailing List content goes here.
+				  <a id="contact"></a>
+				    <div id="slideshow2">
+						<div class ="content">
+								<h1 class="menuheader"> Contact </h1>
+									<div id="map_canvas"></div>
+										<div class="info"> 
+													<h2>4401 Tennyson St. Denver, C0 80212 </h2> 
+													<h3><a href="tel:3035610234">T: 303.561.0234  |</a> <a href="tel:3034805514"> F: 303.480.5514  | </a> <a href="tel:3035614966">  Office: 303.561.4966 </a> </h3>
+													<p>11 to 9 Mon. thru Thurs.  |  11 to 10 Fri. and Sat.  |  Closed Sundays </p>
+												<div class="social">
+															<a href="http://www.facebook.com"> <img src="images/facebook.png"></a>
+															<a href="http://www.twitter.com"> <img src="images/twitter.png"></a>
+															<a href="http://www.instagram.com"> <img src="images/instagram.png"></a>
+												</div>
+										</div>
+
+									   	
+								
+								</div>
+						</div>
+					</div>
 				</div>
 			</section>
 
