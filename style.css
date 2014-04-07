@@ -47,7 +47,9 @@ h3{
 	font-size: 1.2em;
 	color: #49311c;
 	-webkit-font-smoothing: antialiased !important;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+
 }
 
 
@@ -193,7 +195,7 @@ div.logo a {
 /*SLIDESHOW*/
 
 #slideshow {
-	height: 500px;
+	height: 400px;
 	padding: 20px 0;
 	position: relative;
 	margin: 10px 0 0;
@@ -226,7 +228,13 @@ div.logo a {
 	height: 100%;
 	background: transparent;
 	padding: 0;
+	margin: 0 auto;
 	}
+
+.slider{
+	margin: 0 auto;
+	text-align: center;
+}
 
 #indexpage{
 	padding-top: 164px;
@@ -244,22 +252,26 @@ div.logo a {
 
 #page2{
 	height:857px;
-	background:url(images/florence.jpg);
+	background:url(images/florence.jpg) no-repeat;
+	background-size: cover;
 }
 
 #page3{
-	height:1000px;
-	background:red;
+	height:790px;
+	background:url(images/chefs.jpg) no-repeat;
+	background-size: cover;
+
 }
 
 #page4{
 	height:1000px;
-	background:green;
+	background:transparent;
+	background-repeat: none
 }
 
 #page5{
 	height:1000px;
-	background:yellow;
+	background:transparent;
 }
 
 /*MENU*/
@@ -277,7 +289,7 @@ div.logo a {
 	background-color: #ffe5c2;
 	width:90%;
 	border: 4px solid #aba855;
-	margin: 4em auto; 
+	margin: 2em auto; 
 	overflow: auto;
 }
 
@@ -352,61 +364,63 @@ div.logo a {
 	height:500px;
 }
 
+/*Events*/
+#eventscontent{
+	position: relative;
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
 
 /* ABOUT */
 .about{
+	display: inline-block;
+	background: rgb(255,255,255);
+	background: rgba(255,255,255,0.7);
+	padding: 8px;
+	border-radius: 100%;
+	margin-top: 110px;
+}
+
+#about_container{
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
 	width: 100%;
-
-	padding: 5em 0 7em 0;
-
+	left: 0;
+	height: 100%;
+	text-align: center;
 }
 
-.aboutphoto{
-	position: relative;
-	float: left;
-	padding: 0 2em 0 0;
-	height: 400px;
-
-
+.about_inner{
+	padding: 85px 60px;
+	border: 3px solid #aba855;
+	border-radius: 100%;
+	width: 480px;
+	height: 480px;
+	box-sizing: border-box;
+	font-size: 17px;
+	line-height: 24px;
+	color: #444;
 }
 
-#abouttext{
-	position: relative;
-	padding: 0em;
-	font-family: 'Karla', sans-serif;
-	color:black;
-	line-height: 1.6em;	
-	z-index: 10000;
-	clear:right;
+.storyheader{
+	font-size: 2.5em;
+	margin-bottom: 15px;
+	color: #49311c;
+	margin-top: 0px;
+	padding-top: 0em;
+	font-family: ShowcaseSlab; sans;
+	letter-spacing: -1px;
+	-webkit-font-smoothing: antialiased !important;
+	
 }
 
-
-
-
-
-.plainbutton{
-	color: #012059;
-	text-decoration: none;
-	float: left;
-	margin-bottom: 50px;
-	line-height: .1;
-	clear: right;
+.lineheight{
+	line-height: 19px;
 }
 
-.plainbutton:hover{
-	cursor:pointer;
-	color: #012059;
-}
-
-.underlinedbutton{
-	color: #012059;
-	/*text-decoration: underline;*/
-}
-
-.underlinedbutton:hover{
-	cursor:pointer;
-	color: #012059;
-}
 
 /* CONTACT FORM*/
 
@@ -738,36 +752,5 @@ html, body {
 	}
 }
 
-/* #### Mobile Phones Landscape iPhone#### */
-@media only screen and (max-device-width : 480px) and (orientation : landscape){
- 	#wrap{
- 		padding-right: 20%;
-		padding-left: 20%;
-		width:100%;
 
-	}
-
-	#footer{
-
-		margin: 0 auto;
-		width: 140%;
-	}
-
-	.nextbutton{
-	margin-bottom: 40px;
-	margin-left: 5px;
-	letter-spacing: 0;
-	font-size: .9em;
-
-
-	}
-
-	.previousbutton{
-	margin-bottom: 40px;
-	margin-right: 5px;
-	letter-spacing: 0;
-	font-size: .9em;
-
-
-	}
 
